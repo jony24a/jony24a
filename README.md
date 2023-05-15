@@ -25,7 +25,16 @@ Como Ing de Software quiero poder capturas lo que pide la persona, de la marca d
       -Ingrese el nombre del producto que va llevar 
       -Ingrese la cantidad que desea llevar
       
-+ **Then[** Debo de poder mostrar al usuario sus datos despues de la compra **]**
++ **Then[** Debo de poder mostrar al usuario sus datos despues de la compra, como si fuera una factura **]**
+
+      -Nombre de la persona 
+      -Numero de cedula 
+      -Numero de Celular 
+      -Productos que va a llevar 
+      -Producto que va a llevar 
+      -Suma de las cosas que va a llevar
+      
+      
 
 
 
