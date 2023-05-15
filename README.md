@@ -38,7 +38,7 @@ Como Ing de Software quiero poder capturas lo que pide la persona, de la marca d
       -Producto que va a llevar 
       -Suma de las cosas que va a llevar
       
-##Aproximaciones de caso de uso 
+## Aproximaciones de caso de uso 
 
      Nombre: Venta de Monitores 
      Actores: Ing de Software
