@@ -25,6 +25,9 @@ Como Ing de Software quiero poder capturas lo que pide la persona, de la marca d
       -Ingrese el nombre del producto que va llevar 
       -Ingrese la cantidad que desea llevar
       
+
++ **When [** Seleccionar las opciones para dar el resultado **]**
+      
 + **Then[** Debo de poder mostrar al usuario sus datos despues de la compra, como si fuera una factura **]**
 
       -Nombre de la persona 
