@@ -13,6 +13,8 @@ En su labor como programador de software ha sido el elegido para el desarrollo d
 Como Ing de Software quiero poder capturas lo que pide la persona, de la marca de su gusto y dar su precio total de cuantas cosas va a lleva. 
 
 
++ **Given [** Soy el vende **]**
+
 
 
 
