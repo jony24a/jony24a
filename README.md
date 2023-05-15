@@ -54,6 +54,7 @@ Como Ing de Software quiero poder capturas lo que pide la persona, de la marca d
     
 ##Aproximacion diagrama de flujo
 
+```mermaid
 flowchart TD;
     A([Inicio]) --> B["Real: saldo<br>Caracter: nombre[50], nombres[50], cedulas[50], compras[50]<br>Entero: cedula[50], compra[50], opc, numeroClientes <- 0>"] --> C["Digite su Saldo"] --> D[/Leer saldo\] --> E["Digite el numero de Clientes"] --> F[/Leer numeroClientes\] --> G["Para i <- 0 Hasta numeroClientes Con Paso 1 Hacer"] --> H["Digite su Nombre"] --> I[/Leer nombre[i]\] --> J["Digite su Cedula"] --> K[/Leer cedula[i]\] --> L["menu<br>1.LG<br>2.ASUS<br>3.APPLE<br>4.SAMSUNG<br>5.LENOVO"] --> M["Digite la opcion que desea"] --> N[/Leer opc\];
     N --> O["Segun opc Hacer"] --> P1["Escribir \"LG = 500\"<br>saldo = saldo - 500<br>Si saldo < 0 Y saldo < 500 Entonces<br>Escribir \"Saldo insuficiente\"<br>Sino<br>compra[i] = compra[i] + 500<br>FinSi"] --> O
@@ -65,6 +66,7 @@ flowchart TD;
     O --> Q["nombres[i] = nombre[i]<br>cedulas[i] = ConvertirATexto(cedula[i])<br>compras[i] = ConvertirATexto(compra[i])"] --> G;
     G --> R["Para a = 0 Hasta numeroClientes Con Paso 1 Hacer"] --> S["saldo = saldo + ((compra[a] + cedula[a]) / 3) / numeroClientes"] --> T["FinPara"] --> U["Escribir \"El saldo es: \" + saldo"] --> V([Fin]);
 
+```
       
     
       
