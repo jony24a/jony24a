@@ -54,7 +54,6 @@ Como Ing de Software quiero poder capturas lo que pide la persona, de la marca d
     
 ## Aproximacion diagrama de flujo
 
-<p> 
       
 ```mermaid
 flowchart TD;
@@ -69,7 +68,7 @@ flowchart TD;
     G --> R["Para a = 0 Hasta numeroClientes Con Paso 1 Hacer"] --> S["saldo = saldo + ((compra[a] + cedula[a]) / 3) / numeroClientes"] --> T["FinPara"] --> U["Escribir \"El saldo es: \" + saldo"] --> V([Fin]);
 
 ```
-</p>
+
 </details>
 
 <br style="height:100px;"></br>
