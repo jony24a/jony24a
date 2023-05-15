@@ -167,7 +167,7 @@ FinAlgoritmo
             
             
 ## CODIGO
-(CODIGO ESTRUCTURADO)[/programacion/ProgramacionEstructurada/package.java]
+[CODIGO ESTRUCTURADO](/programacion/ProgramacionEstructurada/package.java)
 
 
 
