@@ -57,15 +57,20 @@ Como Ing de Software quiero poder capturas lo que pide la persona, de la marca d
       
 ```mermaid
 flowchart TD;
-    A([Inicio]) --> B["Real: saldo<br>Caracter: nombre[50], nombres[50], cedulas[50], compras[50]<br>Entero: cedula[50], compra[50], opc, numeroClientes <- 0>"] --> C["Digite su Saldo"] --> D[/Leer saldo\] --> E["Digite el numero de Clientes"] --> F[/Leer numeroClientes\] --> G["Para i <- 0 Hasta numeroClientes Con Paso 1 Hacer"] --> H["Digite su Nombre"] --> I[/Leer nombre[i]\] --> J["Digite su Cedula"] --> K[/Leer cedula[i]\] --> L["menu<br>1.LG<br>2.ASUS<br>3.APPLE<br>4.SAMSUNG<br>5.LENOVO"] --> M["Digite la opcion que desea"] --> N[/Leer opc\];
-    N --> O["Segun opc Hacer"] --> P1["Escribir \"LG = 500\"<br>saldo = saldo - 500<br>Si saldo < 0 Y saldo < 500 Entonces<br>Escribir \"Saldo insuficiente\"<br>Sino<br>compra[i] = compra[i] + 500<br>FinSi"] --> O
-    N --> O["Segun opc Hacer"] --> P2["Escribir \"ASUS = 300\"<br>saldo = saldo - 300<br>Si saldo < 0 Y saldo < 300 Entonces<br>Escribir \"Saldo insuficiente\"<br>Sino<br>compra[i] = compra[i] + 300<br>FinSi"] --> O
-    N --> O["Segun opc Hacer"] --> P3["Escribir \"APPLE = 800\"<br>saldo = saldo - 800<br>Si saldo < 0 Y saldo < 800 Entonces<br>Escribir \"Saldo insuficiente\"<br>Sino<br>compra[i] = compra[i] + 800<br>FinSi"] --> O
-    N --> O["Segun opc Hacer"] --> P4["Escribir \"SAMSUNG = 650\"<br>saldo = saldo - 650<br>Si saldo < 0 Y saldo < 650 Entonces<br>Escribir \"Saldo insuficiente\"<br>Sino<br>compra[i] = compra[i] + 650<br>FinSi"] --> O
-    N --> O["Segun opc Hacer"] --> P5["Escribir \"LENOVO = 250\"<br>saldo = saldo - 250<br>Si saldo < 0 Y saldo < 250 Entonces<br>Escribir \"Saldo insuficiente\"<br>Sino<br>compra[i] = compra[i] + 250<br>FinSi"] --> O
-    N --> O["De Otro Modo"] --> P6["Escribir \"opcion invalida\""] --> O
-    O --> Q["nombres[i] = nombre[i]<br>cedulas[i] = ConvertirATexto(cedula[i])<br>compras[i] = ConvertirATexto(compra[i])"] --> G;
-    G --> R["Para a = 0 Hasta numeroClientes Con Paso 1 Hacer"] --> S["saldo = saldo + ((compra[a] + cedula[a]) / 3) / numeroClientes"] --> T["FinPara"] --> U["Escribir \"El saldo es: \" + saldo"] --> V([Fin]);
+    A([Inicio]) --> B["Real: saldo<br>Caracter[50]: nombre<br>Entero[50]: cedula<br>Real[50]: compra<br>Real: descuento<br>Caracter[50]: nombres<br>Caracter[50]: cedulas<br>Caracter[50]: compras<br>Caracter[50]: total<br>Entero: opc<br>Entero: numeroClientes"] --> C{{Digite su saldo}} --> D[/Leer saldo\] --> E{{Digite el numero de Clientes}} --> F[/Leer numeroClientes\] --> G["Para i <- 0 Hasta numeroClientes Con Paso 1 Hacer"/];
+    G --> H{{Digite su Nombre}} --> I[/Leer nombre[i]\] --> J{{Digite su Cedula}} --> K[/Leer cedula[i]\] --> L["menu<br>1.LG: 500<br>2.ASUS: 300<br>3.APPLE: 800<br>4.SAMSUNG: 650<br>5.LENOVO: 250"] --> M{{Digite la opcion que desea}} --> N[/Leer opc\];
+    M -- 1 --> O["saldo <- saldo - 500<br>Si saldo < 0 Y saldo < 500 Entonces<br>Escribir Saldo insuficiente<br>Sino<br>compra[i] <- compra[i] + 500<br>FinSi"];
+    M -- 2 --> P["saldo <- saldo - 300<br>Si saldo < 0 Y saldo < 300 Entonces<br>Escribir Saldo insuficiente<br>Sino<br>compra[i] <- compra[i] + 300<br>FinSi"];
+    M -- 3 --> Q["saldo <- saldo - 800<br>Si saldo < 0 Y saldo < 800 Entonces<br>Escribir Saldo insuficiente<br>Sino<br>compra[i] <- compra[i] + 800<br>FinSi"];
+    M -- 4 --> R["saldo <- saldo - 650<br>Si saldo < 0 Y saldo < 650 Entonces<br>Escribir Saldo insuficiente<br>Sino<br>compra[i] <- compra[i] + 650<br>FinSi"];
+    M -- 5 --> S["saldo <- saldo - 250<br>Si saldo < 0 Y saldo < 250 Entonces<br>Escribir Saldo insuficiente<br>Sino<br>compra[i] <- compra[i] + 250<br>FinSi"];
+    M -- Otro --> T["Escribir opcion invalida"];
+    N --> U["nombres[i] <- nombre[i]<br>cedulas[i] <- ConvertirATexto(cedula[i])<br>compras[i] <- ConvertirATexto(compra[i])"];
+    G --> V["Para a <- 0 Hasta numeroClientes Con Paso 1 Hacer"/];
+    V --> W["saldo <- saldo + ((compra[a] + cedula[a]) / 3) / numeroClientes"];
+    W --> V;
+    V --> X{{Escribir El saldo es: + saldo}} --> Y([Fin]);
+
 
 ```
 
