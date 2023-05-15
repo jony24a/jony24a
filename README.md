@@ -76,6 +76,97 @@ flowchart TD;
 
 </details>
 
+## SeudoCodigo 
+
+            ```
+            Algoritmo VentasMonitores
+    Definir sc Como Scanner
+    Definir saldo Como Real
+    Definir nombre Como Caracter[50]
+    Definir cedula Como Entero[50]
+    Definir compra Como Real[50]
+    Definir descuento Como Real
+    Definir nombres Como Caracter[50]
+    Definir cedulas Como Caracter[50]
+    Definir compras Como Caracter[50]
+    Definir total Como Caracter[50]
+    Definir opc Como Entero
+    
+    Escribir "Digite su Saldo:"
+    saldo = sc.LeerReal()
+    
+    Definir numeroClientes Como Entero
+    Escribir "Digite el numero de Clientes:"
+    numeroClientes = sc.LeerEntero()
+    
+    Para i = 0 Hasta numeroClientes Con Paso 1 Hacer
+        Escribir "Digite su Nombre:"
+        nombre[i] = sc.LeerCadena()
+        Escribir "Digite su Cedula:"
+        cedula[i] = sc.LeerEntero()
+        Escribir "menu"
+        Escribir "1.LG:"
+        Escribir "2.ASUS:"
+        Escribir "3.APPLE:"
+        Escribir "4.SAMSUNG:"
+        Escribir "5.LENOVO:"
+        Escribir "Digite la opcion que desea:"
+        opc = sc.LeerEntero()
+        
+        Segun opc Hacer
+            1: Escribir "LG = 500"
+               saldo = saldo - 500
+               Si saldo < 0 Y saldo < 500 Entonces
+                   Escribir "Saldo insuficiente"
+               Sino
+                   compra[i] = compra[i] + 500
+               FinSi
+            2: Escribir "ASUS = 300"
+               saldo = saldo - 300
+               Si saldo < 0 Y saldo < 300 Entonces
+                   Escribir "Saldo insuficiente"
+               Sino
+                   compra[i] = compra[i] + 300
+               FinSi
+            3: Escribir "APPLE = 800"
+               saldo = saldo - 800
+               Si saldo < 0 Y saldo < 800 Entonces
+                   Escribir "Saldo insuficiente"
+               Sino
+                   compra[i] = compra[i] + 800
+               FinSi
+            4: Escribir "SAMSUNG = 650"
+               saldo = saldo - 650
+               Si saldo < 0 Y saldo < 650 Entonces
+                   Escribir "Saldo insuficiente"
+               Sino
+                   compra[i] = compra[i] + 650
+               FinSi
+            5: Escribir "LENOVO = 250"
+               saldo = saldo - 250
+               Si saldo < 0 Y saldo < 250 Entonces
+                   Escribir "Saldo insuficiente"
+               Sino
+                   compra[i] = compra[i] + 250
+               FinSi
+            De Otro Modo: Escribir "opcion invalida"
+        FinSegun
+        
+        nombres[i] = nombre[i]
+        cedulas[i] = ConvertirATexto(cedula[i])
+        compras[i] = ConvertirATexto(compra[i])
+    FinPara
+    
+    Para a = 0 Hasta numeroClientes Con Paso 1 Hacer
+        saldo = saldo + ((compra[a] + cedula[a]) / 3) / numeroClientes
+    FinPara
+    
+    Escribir "El saldo es: " + saldo
+    sc.Cerrar()
+FinAlgoritmo
+            ```
+
+
 
       
     
