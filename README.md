@@ -164,6 +164,10 @@ flowchart TD;
     sc.Cerrar()
 FinAlgoritmo
             ```
+            
+            
+## CODIGO
+(CODIGO ESTRUCTURADO)[/programacion/ProgramacionEstructurada/package.java]
 
 
 
