@@ -6,7 +6,7 @@ En su labor como programador de software ha sido el elegido para el desarrollo d
 
 + La aplicacion debe enfocar la venta de 4 marcas difernetes en la venta de monitores
 + Los datos ya estan especificados cada uno con su precio y solo se puede ingresar una marca y la cantidad que desa llevar 
-+ 
++ No almacena los datos de la compra
 
 
 
