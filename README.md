@@ -52,7 +52,7 @@ Como Ing de Software quiero poder capturas lo que pide la persona, de la marca d
     Postcondiciones: Resultado Final
     
     
-##Aproximacion diagrama de flujo
+## Aproximacion diagrama de flujo
 
 <p> 
       
