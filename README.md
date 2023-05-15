@@ -54,6 +54,8 @@ Como Ing de Software quiero poder capturas lo que pide la persona, de la marca d
     
 ##Aproximacion diagrama de flujo
 
+<p> 
+      
 ```mermaid
 flowchart TD;
     A([Inicio]) --> B["Real: saldo<br>Caracter: nombre[50], nombres[50], cedulas[50], compras[50]<br>Entero: cedula[50], compra[50], opc, numeroClientes <- 0>"] --> C["Digite su Saldo"] --> D[/Leer saldo\] --> E["Digite el numero de Clientes"] --> F[/Leer numeroClientes\] --> G["Para i <- 0 Hasta numeroClientes Con Paso 1 Hacer"] --> H["Digite su Nombre"] --> I[/Leer nombre[i]\] --> J["Digite su Cedula"] --> K[/Leer cedula[i]\] --> L["menu<br>1.LG<br>2.ASUS<br>3.APPLE<br>4.SAMSUNG<br>5.LENOVO"] --> M["Digite la opcion que desea"] --> N[/Leer opc\];
