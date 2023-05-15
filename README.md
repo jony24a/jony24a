@@ -16,6 +16,7 @@ Como Ing de Software quiero poder capturas lo que pide la persona, de la marca d
 >***Escribir Nombre, Numero de Cedula, Numero de Celular, Prodcuto que desea llevar, Cantidad que desea llevar. 
 
 + **Given [** Soy el Ing de Software **]**
++ 
       +Ingrese su nombre completo 
       +Ingrese su numero de cedula
       +Ingrese su numero de celular
