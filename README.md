@@ -1,6 +1,7 @@
 # Proyecto Base
 > Author: Jonatan Andres Novoa Rodriguez 
 
+
 ## Enfoque 
 En su labor como programador de software ha sido el elegido para el desarrollo de un programa que calcule las ventas de monitores, pidiendo como datos bases pedir el nombre de la persona quien compra el prodcuto, segundo pedor qie ingrese si numero de cedula, luego de eso pedir un numero de celular, apartir de esos datos bases que salga la marca del monitor que deasea las cuales son LG, SAMSUNG, ASUS, APPLE, e ingresar la cantidad de monitores, los precios ya estan estipulados para cada monitor. 
 
@@ -36,6 +37,20 @@ Como Ing de Software quiero poder capturas lo que pide la persona, de la marca d
       -Productos que va a llevar 
       -Producto que va a llevar 
       -Suma de las cosas que va a llevar
+      
+##Aproximaciones de caso de uso 
+
+     Nombre: Venta de Monitores 
+     Actores: Ing de Software
+     Proposito: Guardar nombre, cedula, celular, y los prodcutos que va llevar 
+  
+    ** 1. El usuario debe ingresar nombre
+    ** 2. El usuario debe ingresar cedula
+    ** 3. El usuario debe ingresar celular 
+    ** 4. El usuario debe ingresar la marca que desea 
+    
+      
+    
       
       
 
